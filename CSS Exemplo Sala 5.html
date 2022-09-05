@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Seletores de Pseudo-Classes</title>
+  <style>
+    header li {
+        list-style: none;
+    }
+
+    a:link, a:visited{
+        text-decoration: none;
+        background-color: green;
+        border: 1px solid black;
+        color: black;
+        display: block; /*comporta-se como elemento de bloco- ocupa a tela inteira*/
+        width: 200px;
+        text-align: center;
+        margin-bottom: 1px;       
+    }
+    a:hover, a:active {
+        background: red;
+        color: white;
+    }
+    section div:nth-child(odd){
+        background-color: silver;
+    }
+    section div:nth-child(even){
+        background-color: pink;
+    }
+    section div:nth-child(4):hover, div:nth-child(6):hover{ /* seletor para todos os div com 4 e 6 ficaram com seletor ver*/
+        background-color: green;
+        cursor: pointer;
+    }
+
+    section div:nth-child(6n):hover{
+        background-color: green;
+        cursor: pointer;
+        font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>Seletores de Pseudo-Classes</h1>
+  <header>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="http://www.catolicasc.org.br" target="_blank">Católica SC</a></li>
+      <li><a href="http://www.google.com" target="_blank">Google</a></li>
+    </ul>
+  </header>
+  <section>
+    <div>DIV 1</div>
+    <div>DIV 2</div>
+    <div>DIV 3</div>
+    <div>DIV 4</div>
+    <div>DIV 5</div>
+    <div>DIV 6</div>
+   </section>
+  <section>
+    <div>DIV 1</div>
+    <div>DIV 2</div>
+    <div>DIV 3</div>
+    <div>DIV 4</div>
+    <div>DIV 5</div>
+    <div>DIV 6</div>
+    <div>DIV 7</div>
+    <div>DIV 8</div>
+    <div>DIV 9</div>
+    <div>DIV 10</div>
+    <div>DIV 11</div>
+    <div>DIV 12</div>
+    <div>DIV 13</div>
+    <div>DIV 14</div>
+    <div>DIV 15</div>
+    <div>DIV 16</div>
+    <div>DIV 17</div>
+    <div>DIV 18</div>
+    <div>DIV 19</div>
+    <div>DIV 20</div>
+  </section>
+</body>
+</html>
